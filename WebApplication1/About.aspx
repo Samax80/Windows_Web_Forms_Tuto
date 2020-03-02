@@ -6,5 +6,7 @@
         <asp:Button ID="SendBTN" runat="server" OnClick="SendBTN_Click" Text="Send" />
         <asp:TextBox ID="TxtBox1" runat="server"></asp:TextBox>
     </h3>
-    <p>&nbsp;</p>
+    <p>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    </p>
 </asp:Content>
