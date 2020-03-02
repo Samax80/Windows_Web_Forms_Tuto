@@ -7,17 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
-    public partial class About : Page
+    public partial class ConatactFrom : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "";
-          
-        }
 
-        protected void SendBTN_Click(object sender, EventArgs e)
-        {
-            Label1.Text = string.Format("Status :{0}", TxtBox1.Text);
         }
     }
 }
