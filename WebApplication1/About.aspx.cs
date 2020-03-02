@@ -11,16 +11,16 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "";
+           
             if (IsPostBack)
             {
                 TxtBox1.Text = "Is a Postback";
-                Label1.Text = TxtBox1.Text;
+              
             }
             else
             {
-                TxtBox1.Text = "Is NOT a Postback";
-                Label1.Text = TxtBox1.Text;
+                TxtBox1.Text = "Is NOT  Postback";
+               
 
 
             }
@@ -28,7 +28,7 @@ namespace WebApplication1
 
         protected void SendBTN_Click(object sender, EventArgs e)
         {
-            
+            Label1.Text = string.Format("Status :{0}", TxtBox1.Text);
         }
     }
 }
