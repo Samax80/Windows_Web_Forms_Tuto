@@ -9,6 +9,9 @@
  <uc:ContactFrom ID="cfMessage" Message="Default Scene"  runat ="server"></uc:ContactFrom>
     <asp:Button ID="SendBTN" runat="server" OnClick="SendBTN_Click" Text="Send" />
 
+     <p>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    </p>
 <%--    We nned have access to the control to retrieve the inf--%>
 
 </asp:Content>
