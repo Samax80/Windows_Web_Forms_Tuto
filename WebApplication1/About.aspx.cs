@@ -11,7 +11,15 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(IsPostBack)
+            {
+                TxtBox1.Text = "Is a Postback";
+            }
+            else
+            {
+                TxtBox1.Text = "Is NOT a Postback";
 
+            }
         }
 
         protected void SendBTN_Click(object sender, EventArgs e)
