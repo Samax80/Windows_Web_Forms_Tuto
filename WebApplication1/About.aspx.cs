@@ -13,5 +13,10 @@ namespace WebApplication1
         {
 
         }
+
+        protected void SendBTN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

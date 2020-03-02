@@ -3,7 +3,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>&nbsp;</h2>
     <h3>
-        <asp:Button ID="SendBTN" runat="server" Text="Send" />
+        <asp:Button ID="SendBTN" runat="server" OnClick="SendBTN_Click" Text="Send" />
+        <asp:TextBox ID="TxtBox1" runat="server"></asp:TextBox>
     </h3>
     <p>&nbsp;</p>
 </asp:Content>
