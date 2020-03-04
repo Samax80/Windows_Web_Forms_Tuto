@@ -14,18 +14,18 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
           
-            Label1.Text = "";
+           // Label1.Text = "";
         }
 
         protected void SendBTN_Click(object sender, EventArgs e)
         {
-            Label1.Text = string.Format("Status :{0}", cfMessage.Message);
+            //Label1.Text = string.Format("Status :{0}", cfMessage.Message);
 
             /*find the connection strings, we will use this connection string 
               to open the database connection, but before we have to create the insertStatement */
             var connectionString = ConfigurationManager.ConnectionStrings["messageDB"].ConnectionString;
 
-            /*InsertStatemetnt will be used to insert stuff into  the database
+            /*InsertStatement will be used to insert stuff into  the database
              SO with this one ,now we have a connection string and we have a statement we can run into the database
              */
             var insertStatement = "INSERT into Messages(Name,Message) values (@Name,@Message)";
