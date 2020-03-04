@@ -51,7 +51,17 @@ namespace WebApplication1
                 }
 
             }
-
         }
+
+
+        /*because we are not binding the data when it should,the app
+           is going to show the data before it has all the data.So to Fix it we use 
+           the Page_PreRender method
+                */
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            lvMessages.DataBind();
+        }
+
     }
 }
