@@ -2,5 +2,7 @@
    <h3>
         
         <asp:TextBox ID="TxtBox1" runat="server"></asp:TextBox>
+       <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+       
     </h3>
    

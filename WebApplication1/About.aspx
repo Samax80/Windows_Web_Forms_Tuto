@@ -9,6 +9,7 @@
     we use an ID taht will  be the name of the control it will hold the avriable 
     and fucntions from the class ContactFrom.ascx.cs--%>
  <uc:ContactFrom ID="cfMessage" Message="Default Scene"  runat ="server"></uc:ContactFrom>
+
     <asp:Button ID="SendBTN" runat="server" OnClick="SendBTN_Click" Text="Send" />
 
      <p>
@@ -24,7 +25,7 @@
                          <asp:Button runat="server" CommandName="Edit" Text="Edit" ID="EditButton" />
                      </td>
                      <td>
-                         <asp:Label Text='<%# Eval("Id") %>' runat="server" ID="IdLabel" /></td>
+                       
                      <td>
                          <asp:Label Text='<%# Eval("Name") %>' runat="server" ID="NameLabel" /></td>
                      <td>
@@ -38,7 +39,7 @@
                          <asp:Button runat="server" CommandName="Cancel" Text="Cancel" ID="CancelButton" />
                      </td>
                      <td>
-                         <asp:Label Text='<%# Eval("Id") %>' runat="server" ID="IdLabel1" /></td>
+                       
                      <td>
                          <asp:TextBox Text='<%# Bind("Name") %>' runat="server" ID="NameTextBox" /></td>
                      <td>
@@ -72,7 +73,7 @@
                          <asp:Button runat="server" CommandName="Edit" Text="Edit" ID="EditButton" />
                      </td>
                      <td>
-                         <asp:Label Text='<%# Eval("Id") %>' runat="server" ID="IdLabel" /></td>
+                        
                      <td>
                          <asp:Label Text='<%# Eval("Name") %>' runat="server" ID="NameLabel" /></td>
                      <td>
@@ -106,7 +107,7 @@
                          <asp:Button runat="server" CommandName="Edit" Text="Edit" ID="EditButton" />
                      </td>
                      <td>
-                         <asp:Label Text='<%# Eval("Id") %>' runat="server" ID="IdLabel" /></td>
+                        
                      <td>
                          <asp:Label Text='<%# Eval("Name") %>' runat="server" ID="NameLabel" /></td>
                      <td>
@@ -117,7 +118,7 @@
 
          <asp:SqlDataSource runat="server" ID="MessageDS" ConnectionString='<%$ ConnectionStrings:messageDB %>' DeleteCommand="DELETE FROM [Messages] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Messages] ([Name], [Message]) VALUES (@Name, @Message)" SelectCommand="SELECT * FROM [Messages]" UpdateCommand="UPDATE [Messages] SET [Name] = @Name, [Message] = @Message WHERE [Id] = @Id">
              <DeleteParameters>
-                 <asp:Parameter Name="Id" Type="Int32"></asp:Parameter>
+               
              </DeleteParameters>
              <InsertParameters>
                  <asp:Parameter Name="Name" Type="String"></asp:Parameter>
@@ -126,7 +127,7 @@
              <UpdateParameters>
                  <asp:Parameter Name="Name" Type="String"></asp:Parameter>
                  <asp:Parameter Name="Message" Type="String"></asp:Parameter>
-                 <asp:Parameter Name="Id" Type="Int32"></asp:Parameter>
+               
              </UpdateParameters>
          </asp:SqlDataSource>
      </p>

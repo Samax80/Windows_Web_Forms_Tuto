@@ -10,13 +10,21 @@ namespace WebApplication1
     public partial class ConatactFrom : System.Web.UI.UserControl
     {
         public string Message { get; set; }
+        public string Name { get; set; }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (IsPostBack)
-            { Message = TxtBox1.Text; }
+            { Message = TxtBox1.Text;
+                Name = TextBox2.Text;
+            }
+
             else
-            { TxtBox1.Text = Message; }
+            { TxtBox1.Text = Message;
+                TextBox2.Text= Name;
+            }
                 
 
         }

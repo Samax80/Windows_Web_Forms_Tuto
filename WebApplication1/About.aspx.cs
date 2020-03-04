@@ -44,7 +44,7 @@ namespace WebApplication1
                 using (var sqlcommand = new SqlCommand(insertStatement, sqlConnection))
                 {
                     sqlcommand.Parameters.AddWithValue("Name", cfMessage.Message);
-                    sqlcommand.Parameters.AddWithValue("Message", cfMessage.Message);
+                    sqlcommand.Parameters.AddWithValue("Message", cfMessage.Name);
 
                     /* because this is not a query , this is not expected to return any data*/
                     sqlcommand.ExecuteNonQuery();
